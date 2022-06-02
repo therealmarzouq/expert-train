@@ -1,0 +1,5 @@
+.root {
+  @apply shadow-1 w-full relative overflow-hidden flex text-secondary max-w-4.5xl;
+  min-height: 18rem;
+  background-color: #f8f9ff;
+}

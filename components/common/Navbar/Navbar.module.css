@@ -1,0 +1,21 @@
+.root {
+  @apply bg-white px-4 py-5 shadow-3 flex justify-between items-center md:px-10 md:z-50
+  md:fixed w-full;
+}
+.nav {
+  @apply hidden md:flex select-none;
+}
+.link {
+  @apply mx-4 no-underline  text-secondary;
+}
+
+.link:hover {
+  @apply opacity-75 font-semibold;
+}
+.link.link-active {
+  @apply font-semibold text-blue;
+}
+.link.link-active::after {
+  content: '';
+  @apply mx-auto rounded-lg block w-2/6 h-0.5 my-0.5 bg-blue;
+}

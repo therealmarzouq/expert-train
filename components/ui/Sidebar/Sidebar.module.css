@@ -1,0 +1,56 @@
+.root {
+  @apply fixed inset-0 h-full z-50 box-border outline-none md:w-72 w-full transition-all rounded-br-3xl shadow-4;
+}
+
+.sidebar {
+  @apply h-full flex flex-col text-base bg-accent-0  overflow-y-auto
+  overflow-x-hidden w-72 pl-9 pr-14 py-5 relative items-center text-center rounded-br-3xl;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.backdrop {
+  @apply absolute inset-0 bg-black bg-opacity-40 duration-100 ease-linear md:hidden;
+  backdrop-filter: blur(0.8px);
+  -webkit-backdrop-filter: blur(0.8px);
+}
+
+.profile-avatar-container {
+  @apply flex items-center justify-center mt-3 mb-1.5 rounded-full mx-auto;
+  background: linear-gradient(360deg, #0b6666 0%, rgba(11, 102, 102, 0) 88.46%);
+  height: 85px;
+  width: 85px;
+}
+
+.sidebar-menu {
+  @apply px-5 w-full;
+}
+.sidebar-menu-link {
+  @apply flex items-center my-5;
+}
+.sidebar-menu-link:hover .sidebar-menu-icon path,
+.sidebar-menu-link:hover .sidebar-menu-text {
+  @apply font-semibold opacity-75;
+}
+.sidebar-menu-active .sidebar-menu-text {
+  @apply text-blue font-semibold;
+}
+.sidebar-menu-link:first-of-type.sidebar-menu-active .sidebar-menu-icon path {
+  stroke: var(--blue);
+}
+.sidebar-menu-active:not(.sidebar-menu-link:first-of-type)
+  .sidebar-menu-icon
+  path {
+  fill: var(--blue);
+}
+.sidebar-menu-text {
+  @apply text-sm md:text-base ml-4 font-normal text-primary select-none;
+}
+.sidebar-menu-icon {
+  @apply h-5 w-5;
+}
+.sidebar-menu-link:last-of-type {
+  @apply absolute left-0 right-0 bottom-0 mx-auto flex justify-center items-start ml-9 mr-14 px-6;
+}
+.sidebar-menu-link:last-of-type > .sidebar-menu-text {
+  @apply font-semibold;
+}

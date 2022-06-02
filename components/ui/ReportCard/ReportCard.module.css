@@ -1,0 +1,24 @@
+.root {
+  @apply shadow-2 bg-white p-6 text-secondary select-none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.06);
+}
+
+.total {
+  @apply flex;
+}
+.total-amount {
+  @apply text-5xl  font-normal;
+  line-height: 73px;
+  font-size: 55px;
+}
+.total-currency {
+  @apply text-4xl text-blue ml-1 -mt-0;
+}
+.total-description {
+  @apply text-lg;
+}
+
+.progress {
+  @apply h-2;
+  background: linear-gradient(90deg, #ececec 0%, #f2f1f1 111.47%);
+}
