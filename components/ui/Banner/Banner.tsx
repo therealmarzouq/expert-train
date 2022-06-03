@@ -12,7 +12,7 @@ const Banner = () => {
       <div className="flex flex-wrap md:flex-nowrap items-center justify-center">
         <IllustrationOne className="h-auto w-full" />
         <div className="py-8 px-2 text-center flex w-full flex-col justify-center items-center md:-ml-24">
-          <h1 className="font-semibold text-3xl">
+          <h1 className="font-semibold text-3xl px-1 md:px-0">
             20% Safe On Your First Account
           </h1>
 
